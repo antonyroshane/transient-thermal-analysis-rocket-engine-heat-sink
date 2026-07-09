@@ -75,8 +75,6 @@ relevant lines are included so you can find them quickly.**
 
 ![Editable parameters — sim control, Bartz, structural, geometry](images/variables.png)
 
-**Gas parameter interpolation (hot-gas property profiles vs. axial position):**
-
 ![Gas parameter interpolation lines](images/variable1.png)
 
 ## Results & Verification
