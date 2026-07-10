@@ -3,9 +3,8 @@
 ## Introduction
 
 This tool models the **transient conductive-convective heat transfer** through
-the wall of a liquid rocket engine's thrust chamber and nozzle during a burn.
-Given the engine geometry (chamber, converging, and diverging sections) and
-hot-gas-side conditions, it:
+the wall of a liquid rocket engine's thrust chamber and nozzle during the burn.
+Given the engine geometry and hot-gas-side conditions, it:
 
 - Computes the local convective heat transfer coefficient along the engine
   axis using the **Bartz correlation**
@@ -32,7 +31,7 @@ way to estimate that transient response without needing full CFD/FEA tools.
    few key radii and lengths, then interpolated (`pchip`) onto a fine axial grid.
 2. **Hot-gas-side heat transfer coefficient** — computed at every axial
    station via the Bartz equation, using local Mach number (from the
-   area-Mach relation) and stagnation conditions.
+   area-Mach relation) and chamber conditions.
 3. **Radial wall discretization** — the wall thickness at each axial
    station is split into `numpts_radial` annular rings.
 4. **Transient solve** — a thermal network (conduction between rings +
