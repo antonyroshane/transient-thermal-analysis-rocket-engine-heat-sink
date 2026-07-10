@@ -18,12 +18,11 @@ Given the engine geometry and hot-gas-side conditions, it:
 
 ## Why This Was Needed
 
-Sizing a regeneratively- or ablatively-cooled (or simply passively-cooled)
-thrust chamber requires knowing whether the wall material will survive the
-thermal loads seen during a burn, and how quickly the wall heats up. Analytical
-steady-state estimates don't capture how temperature evolves with time, especially
-important for short-duration burns. This script provides a lightweight, editable
-way to estimate that transient response without needing full CFD/FEA tools.
+I was working on a design of small heat-sink rocket engine, one of the first design questions was whether a 10 mm thick stainless steel chamber wall could safely withstand the thermal loads during a short-duration burn. While high-fidelity Conjugate Heat Transfer, simulations in ANSYS Fluent can accurately predict wall temperatures, they are computationally expensive, require significant setup time, and demand prior CFD experience.
+
+For early-stage engine design, a faster approach is often more practical. This MATLAB script provides a lightweight transient thermal analysis that estimates how the chamber wall temperature evolves during a burn using a one-dimensional heat conduction model. It allows rapid evaluation of wall thickness, burn duration, and thermal response before investing time in detailed CFD simulations.
+
+The objective is not to replace CHT analysis, but to provide a quick preliminary design tool that helps determine whether a heat-sink engine concept is thermally feasible and guides early design decisions with minimal computational effort.
 
 ## How It Works
 
