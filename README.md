@@ -106,7 +106,7 @@ track the point of highest heat transfer coefficient.
 
 ## Usage
 
-1. Open `transient_heat_transfer.m` in MATLAB.
+1. Open `Transient_Nozzle_Wall_Temp.m` in MATLAB.
 2. Edit the parameters listed in the [Configurable Parameters](#configurable-parameters)
    section to match your engine.
 3. Run the script. Figures will be generated automatically, and peak values
