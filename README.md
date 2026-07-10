@@ -2,16 +2,6 @@
 
 ## Introduction
 
-<!--
-  Write a short intro here covering:
-  - What this project is (e.g. a MATLAB tool for transient thermal analysis of a
-    liquid rocket engine thrust chamber/nozzle wall)
-  - Why the code was needed — e.g. no easy way to predict how hot the chamber
-    wall gets over a burn, whether the wall will survive the thermal load,
-    how the wall temperature evolves radially and axially with time, etc.
-  - Who it's for (students, hobbyists, small engine design teams, etc.)
--->
-
 This tool models the **transient conductive-convective heat transfer** through
 the wall of a liquid rocket engine's thrust chamber and nozzle during a burn.
 Given the engine geometry (chamber, converging, and diverging sections) and
@@ -29,7 +19,6 @@ hot-gas-side conditions, it:
 
 ## Why This Was Needed
 
-<!-- Fill in your own reasoning here, e.g.: -->
 Sizing a regeneratively- or ablatively-cooled (or simply passively-cooled)
 thrust chamber requires knowing whether the wall material will survive the
 thermal loads seen during a burn, and how quickly the wall heats up. Analytical
@@ -79,13 +68,6 @@ relevant lines are included so you can find them quickly.**
 
 ## Results & Verification
 
-<!--
-  Describe here how you verified the results — e.g. compared against hand
-  calculations, known values from literature/reference engines, sanity-checked
-  the Biot number being small (lumped assumption valid), checked energy balance,
-  compared Bartz h_g against published values for similar engines, etc.
--->
-
 The script reports the **maximum Biot number** across all radial slices to
 confirm the lumped-parameter assumption is reasonable (`Bi << 1` supports
 treating each ring as internally isothermal). It also prints the **peak
@@ -134,7 +116,7 @@ track the point of highest heat transfer coefficient.
 ## Suggestions Welcome
 
 This project is a work in progress, and I'm not a thermal/propulsion
-expert by trade — if you spot an error in the modeling assumptions, the
+expert, if you spot an error in the modeling assumptions, the
 Bartz implementation, the discretization scheme, or anything else, please
 open an issue or a pull request. Suggestions for improving accuracy,
 performance, or usability are very welcome!
