@@ -94,21 +94,18 @@ at the end of the burn, along with their axial locations.
 
 ### Output plots produced by the script
 
-**1. Chamber geometry check** — confirms the interpolated contour (blue)
-matches the defined chamber/converging/diverging stations (black):
+**1. Chamber geometry check**
 
 ![Thrust chamber cross section](images/geometry_plot.png)
 
-**2. Convective heat transfer coefficient vs. axial position** — Bartz
-coefficient peaks near the throat, as expected:
+**2. Convective heat transfer coefficient vs. axial position**
 
 ![Bartz coefficient vs axial position](images/bartz_coeff.png)
 
 For this example run, the peak convective coefficient is **6.44 kW/(m²K)
 at x = 0.1380 m** (just upstream of the throat).
 
-**3. 2D temperature distribution at the end of the burn** — cross-sectional
-view of the wall, hottest near the throat:
+**3. 2D temperature distribution at the end of the burn**
 
 ![Temperature distribution at t = 5s](images/temp_profile.png)
 
