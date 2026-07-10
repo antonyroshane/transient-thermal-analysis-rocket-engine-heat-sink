@@ -48,16 +48,14 @@ relevant lines are included so you can find them quickly.**
 
 | Parameter(s) | What it controls | Location |
 |---|---|---|
-| `numpts`, `numpts_radial`, `numpts_time` | Simulation resolution (axial points, radial rings, time steps) | Top of script |
-| `mu`, `mdot_total` | Gas viscosity, total mass flow rate | Sim control block |
-| `P0_bartz`, `gamma_bartz`, `Cp_gas_bartz`, `omega_bartz`, `rc_curv`, `Pr` | Bartz equation / combustion gas properties | Bartz parameters block |
-| `k_gr`, `rho_gr`, `Cp_gr` | Wall material properties (thermal conductivity, density, specific heat) | Structural parameters block |
-| `Tinit` | Initial wall temperature | Structural parameters block |
+| `numpts`, `numpts_radial`, `numpts_time`,`Tf`| Simulation resolution (axial points, radial rings, time steps,Total burn duration  | Sim control block |
+| `P0_bartz`, `gamma_bartz`, `Cp_gas_bartz`, `omega_bartz`, `rc_curv`, `Pr`,`mu`, `mdot_total` | Bartz equation / combustion gas properties | Bartz parameters block |
+| `Twg_bartz` | Assumed hot-side wall temperature used in Bartz sigma correction | Bartz parameters section |
+| `k_gr`, `rho_gr`, `Cp_gr` ,`Tinit`| Wall material properties (thermal conductivity, density, specific heat, inital wall temp) | Structural parameters block |
 | `Rc`, `Rt`, `Re`, `Lc`, `L_conv`, `L_div` | Engine geometry (chamber/throat/exit radii and section lengths) | Engine geometry block |
 | `wall_thickness_mm` | Radial wall thickness | Below geometry block |
 | `x_hga`, `hga`, `Prga`, `kga` | Hot gas property profiles (enthalpy/heat coefficient, Prandtl, conductivity) vs. axial position | Gas parameter interpolation block |
-| `Twg_bartz` | Assumed hot-side wall temperature used in Bartz sigma correction | Bartz parameters section |
-| `Tf` | Total burn duration simulated | Time control block |
+
 
 **Sim control, Bartz, structural, and geometry parameters:**
 
