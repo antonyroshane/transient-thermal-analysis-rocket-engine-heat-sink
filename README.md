@@ -65,8 +65,7 @@ relevant lines are included so you can find them quickly.**
 ## Results & Verification
 
 The script reports the **maximum Biot number** across all radial slices to
-confirm the lumped-parameter assumption is reasonable (`Bi << 1` supports
-treating each ring as internally isothermal). It also prints the **peak
+confirm the lumped-parameter assumption is reasonable (`Bi << 1`). It also prints the **peak
 convective heat transfer coefficient** and **peak inner-wall temperature**
 at the end of the burn, along with their axial locations.
 
