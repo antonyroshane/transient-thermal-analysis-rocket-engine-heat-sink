@@ -69,6 +69,10 @@ confirm the lumped-parameter assumption is reasonable (`Bi << 1`). It also print
 convective heat transfer coefficient** and **peak inner-wall temperature**
 at the end of the burn, along with their axial locations.
 
+When compared with the CHT simulation results, the code predicts the 
+nozzle region temperature with good accuracy. However, it underpredicts 
+the combustion chamber temperature relative to the ANSYS results.
+
 ### Output plots produced by the script
 
 **1. Chamber geometry check**
